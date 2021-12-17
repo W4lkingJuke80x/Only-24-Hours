@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		F208EEFB2762B30400A2A578 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208EEFA2762B30400A2A578 /* AppDelegate.swift */; };
 		F208EEFD2762B30400A2A578 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208EEFC2762B30400A2A578 /* SceneDelegate.swift */; };
-		F208EEFF2762B30400A2A578 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208EEFE2762B30400A2A578 /* ViewController.swift */; };
+		F208EEFF2762B30400A2A578 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208EEFE2762B30400A2A578 /* DailyViewController.swift */; };
 		F208EF022762B30400A2A578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F208EF002762B30400A2A578 /* Main.storyboard */; };
 		F208EF052762B30400A2A578 /* Only_24_Hours.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F208EF032762B30400A2A578 /* Only_24_Hours.xcdatamodeld */; };
 		F208EF072762B30800A2A578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F208EF062762B30800A2A578 /* Assets.xcassets */; };
 		F208EF0A2762B30800A2A578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F208EF082762B30800A2A578 /* LaunchScreen.storyboard */; };
+		F208EF162762C1BF00A2A578 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208EF152762C1BF00A2A578 /* Circle.swift */; };
+		F208EF192762C2FB00A2A578 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208EF182762C2FB00A2A578 /* Task.swift */; };
+		F217B1312764051C005C13DE /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F217B1302764051C005C13DE /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F208EEF72762B30400A2A578 /* Only 24 Hours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Only 24 Hours.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F208EEFA2762B30400A2A578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F208EEFC2762B30400A2A578 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F208EEFE2762B30400A2A578 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F208EEFE2762B30400A2A578 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 		F208EF012762B30400A2A578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F208EF042762B30400A2A578 /* Only_24_Hours.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Only_24_Hours.xcdatamodel; sourceTree = "<group>"; };
 		F208EF062762B30800A2A578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F208EF092762B30800A2A578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F208EF0B2762B30800A2A578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F208EF152762C1BF00A2A578 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		F208EF182762C2FB00A2A578 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		F217B1302764051C005C13DE /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +66,49 @@
 			children = (
 				F208EEFA2762B30400A2A578 /* AppDelegate.swift */,
 				F208EEFC2762B30400A2A578 /* SceneDelegate.swift */,
-				F208EEFE2762B30400A2A578 /* ViewController.swift */,
-				F208EF002762B30400A2A578 /* Main.storyboard */,
+				F208EF112762B40000A2A578 /* Model */,
+				F208EF142762B43000A2A578 /* ViewModel */,
+				F208EF132762B42A00A2A578 /* View */,
 				F208EF062762B30800A2A578 /* Assets.xcassets */,
-				F208EF082762B30800A2A578 /* LaunchScreen.storyboard */,
 				F208EF0B2762B30800A2A578 /* Info.plist */,
 				F208EF032762B30400A2A578 /* Only_24_Hours.xcdatamodeld */,
 			);
 			path = "Only 24 Hours";
+			sourceTree = "<group>";
+		};
+		F208EF112762B40000A2A578 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F208EF182762C2FB00A2A578 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F208EF132762B42A00A2A578 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F208EF172762C1C600A2A578 /* Storyboards */,
+				F208EF152762C1BF00A2A578 /* Circle.swift */,
+				F208EEFE2762B30400A2A578 /* DailyViewController.swift */,
+				F217B1302764051C005C13DE /* AddTaskViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F208EF142762B43000A2A578 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F208EF172762C1C600A2A578 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F208EF002762B30400A2A578 /* Main.storyboard */,
+				F208EF082762B30800A2A578 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F208EEFF2762B30400A2A578 /* ViewController.swift in Sources */,
+				F208EF192762C2FB00A2A578 /* Task.swift in Sources */,
+				F208EEFF2762B30400A2A578 /* DailyViewController.swift in Sources */,
+				F208EF162762C1BF00A2A578 /* Circle.swift in Sources */,
 				F208EF052762B30400A2A578 /* Only_24_Hours.xcdatamodeld in Sources */,
 				F208EEFB2762B30400A2A578 /* AppDelegate.swift in Sources */,
 				F208EEFD2762B30400A2A578 /* SceneDelegate.swift in Sources */,
+				F217B1312764051C005C13DE /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
