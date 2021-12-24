@@ -8,6 +8,6 @@
         <attribute name="to" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Goal" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="Goal" positionX="-54" positionY="-9" width="128" height="104"/>
     </elements>
 </model>

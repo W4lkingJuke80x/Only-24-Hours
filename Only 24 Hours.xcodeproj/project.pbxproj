@@ -11,12 +11,13 @@
 		F208EEFD2762B30400A2A578 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208EEFC2762B30400A2A578 /* SceneDelegate.swift */; };
 		F208EEFF2762B30400A2A578 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208EEFE2762B30400A2A578 /* DailyViewController.swift */; };
 		F208EF022762B30400A2A578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F208EF002762B30400A2A578 /* Main.storyboard */; };
-		F208EF052762B30400A2A578 /* Only_24_Hours.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F208EF032762B30400A2A578 /* Only_24_Hours.xcdatamodeld */; };
 		F208EF072762B30800A2A578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F208EF062762B30800A2A578 /* Assets.xcassets */; };
 		F208EF0A2762B30800A2A578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F208EF082762B30800A2A578 /* LaunchScreen.storyboard */; };
 		F208EF162762C1BF00A2A578 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208EF152762C1BF00A2A578 /* Circle.swift */; };
-		F208EF192762C2FB00A2A578 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208EF182762C2FB00A2A578 /* Task.swift */; };
-		F217B1312764051C005C13DE /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F217B1302764051C005C13DE /* AddTaskViewController.swift */; };
+		F217B1312764051C005C13DE /* AddGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F217B1302764051C005C13DE /* AddGoalViewController.swift */; };
+		F28D5E912774B21100C169FE /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28D5E8F2774B21100C169FE /* Goal+CoreDataClass.swift */; };
+		F28D5E922774B21100C169FE /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28D5E902774B21100C169FE /* Goal+CoreDataProperties.swift */; };
+		F28F06CD2774B06E00375625 /* Only_24_Hours.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F28F06CB2774B06E00375625 /* Only_24_Hours.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,13 +26,14 @@
 		F208EEFC2762B30400A2A578 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F208EEFE2762B30400A2A578 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 		F208EF012762B30400A2A578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F208EF042762B30400A2A578 /* Only_24_Hours.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Only_24_Hours.xcdatamodel; sourceTree = "<group>"; };
 		F208EF062762B30800A2A578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F208EF092762B30800A2A578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F208EF0B2762B30800A2A578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F208EF152762C1BF00A2A578 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
-		F208EF182762C2FB00A2A578 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		F217B1302764051C005C13DE /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		F217B1302764051C005C13DE /* AddGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewController.swift; sourceTree = "<group>"; };
+		F28D5E8F2774B21100C169FE /* Goal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F28D5E902774B21100C169FE /* Goal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F28F06CC2774B06E00375625 /* Only_24_Hours.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Only_24_Hours.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +73,7 @@
 				F208EF132762B42A00A2A578 /* View */,
 				F208EF062762B30800A2A578 /* Assets.xcassets */,
 				F208EF0B2762B30800A2A578 /* Info.plist */,
-				F208EF032762B30400A2A578 /* Only_24_Hours.xcdatamodeld */,
+				F28F06CB2774B06E00375625 /* Only_24_Hours.xcdatamodeld */,
 			);
 			path = "Only 24 Hours";
 			sourceTree = "<group>";
@@ -79,7 +81,8 @@
 		F208EF112762B40000A2A578 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F208EF182762C2FB00A2A578 /* Task.swift */,
+				F28D5E8F2774B21100C169FE /* Goal+CoreDataClass.swift */,
+				F28D5E902774B21100C169FE /* Goal+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,7 +93,7 @@
 				F208EF172762C1C600A2A578 /* Storyboards */,
 				F208EF152762C1BF00A2A578 /* Circle.swift */,
 				F208EEFE2762B30400A2A578 /* DailyViewController.swift */,
-				F217B1302764051C005C13DE /* AddTaskViewController.swift */,
+				F217B1302764051C005C13DE /* AddGoalViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,13 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F208EF192762C2FB00A2A578 /* Task.swift in Sources */,
 				F208EEFF2762B30400A2A578 /* DailyViewController.swift in Sources */,
+				F28D5E912774B21100C169FE /* Goal+CoreDataClass.swift in Sources */,
+				F28F06CD2774B06E00375625 /* Only_24_Hours.xcdatamodeld in Sources */,
 				F208EF162762C1BF00A2A578 /* Circle.swift in Sources */,
-				F208EF052762B30400A2A578 /* Only_24_Hours.xcdatamodeld in Sources */,
+				F28D5E922774B21100C169FE /* Goal+CoreDataProperties.swift in Sources */,
 				F208EEFB2762B30400A2A578 /* AppDelegate.swift in Sources */,
 				F208EEFD2762B30400A2A578 /* SceneDelegate.swift in Sources */,
-				F217B1312764051C005C13DE /* AddTaskViewController.swift in Sources */,
+				F217B1312764051C005C13DE /* AddGoalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +347,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -354,7 +359,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -371,6 +376,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -382,7 +388,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -410,13 +416,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F208EF032762B30400A2A578 /* Only_24_Hours.xcdatamodeld */ = {
+		F28F06CB2774B06E00375625 /* Only_24_Hours.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F208EF042762B30400A2A578 /* Only_24_Hours.xcdatamodel */,
+				F28F06CC2774B06E00375625 /* Only_24_Hours.xcdatamodel */,
 			);
-			currentVersion = F208EF042762B30400A2A578 /* Only_24_Hours.xcdatamodel */;
-			path = Only_24_Hours.xcdatamodeld;
+			currentVersion = F28F06CC2774B06E00375625 /* Only_24_Hours.xcdatamodel */;
+			name = Only_24_Hours.xcdatamodeld;
+			path = ../Only_24_Hours.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

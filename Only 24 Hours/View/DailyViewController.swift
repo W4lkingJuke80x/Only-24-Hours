@@ -9,12 +9,16 @@ import UIKit
 
 class DailyViewController: UIViewController {
     
-    @IBOutlet weak var taskNameLabel: UILabel!
+    @IBOutlet weak var goalNameLabel: UILabel!
     @IBOutlet weak var fromDurationLabel: UILabel!
     @IBOutlet weak var toDurationLabel: UILabel!
     
     var rotationAng: CGFloat = 0
-
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    var goals: [Goal]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,11 +34,18 @@ class DailyViewController: UIViewController {
         //PAN:
         let panCircle = UIPanGestureRecognizer(target: self, action: #selector(circleRotation(sender:)))
         viewForGesture.addGestureRecognizer(panCircle)
+        
+        fetchGoals()
+        
+        goalNameLabel.text = goals?[0].title
+        fromDurationLabel.text = goals?[0].from
+        toDurationLabel.text = goals?[0].to
     }
     
     @objc func circleRotation(sender: UIPanGestureRecognizer) {
         if let viewToRotate = sender.view?.subviews[0] {
             
+            // TODO: Refine the Animation
             //PAN:
             let translation = sender.translation(in: sender.view)
             let velocity = sender.velocity(in: sender.view)
@@ -55,10 +66,16 @@ class DailyViewController: UIViewController {
             }
         }
     }
-
-    @IBAction func addTaskPressed(_ sender: UIButton) {
-        
-    }
     
+    func fetchGoals() {
+        do {
+            self.goals = try context.fetch(Goal.fetchRequest())
+            if let safeGoals = goals {
+                print("\(String(describing: safeGoals[0].title))")
+            }
+        } catch {
+            print("Error while fetching goals")
+        }
+    }
 }
 

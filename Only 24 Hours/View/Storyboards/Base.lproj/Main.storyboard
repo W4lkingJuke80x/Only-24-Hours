@@ -71,7 +71,6 @@
                                 <color key="tintColor" red="0.60333871839999997" green="0.1102266982" blue="0.1223062947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
                                 <connections>
-                                    <action selector="addTaskPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Jv-3k-oWt"/>
                                     <segue destination="Odb-ZP-1lO" kind="presentation" identifier="showAddTaskScreen" id="Bj2-hx-x61"/>
                                 </connections>
                             </button>
@@ -87,7 +86,7 @@
                     </view>
                     <connections>
                         <outlet property="fromDurationLabel" destination="p6Y-Br-wSf" id="1y1-2S-MbY"/>
-                        <outlet property="taskNameLabel" destination="ooj-H1-utz" id="GQX-cf-VaZ"/>
+                        <outlet property="goalNameLabel" destination="ooj-H1-utz" id="GQX-cf-VaZ"/>
                         <outlet property="toDurationLabel" destination="wzN-hT-N5h" id="dBm-Dd-O7m"/>
                     </connections>
                 </viewController>
@@ -95,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
         </scene>
-        <!--Add Task View Controller-->
+        <!--Add Goal View Controller-->
         <scene sceneID="R9P-oG-mKB">
             <objects>
-                <viewController id="Odb-ZP-1lO" customClass="AddTaskViewController" customModule="Only_24_Hours" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Odb-ZP-1lO" customClass="AddGoalViewController" customModule="Only_24_Hours" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ror-Jm-Hga">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +111,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9zB-mO-cqe">
                                                 <rect key="frame" x="8" y="10" width="284" height="180"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iec-ZY-ky1">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iec-ZY-ky1">
                                                         <rect key="frame" x="0.0" y="0.0" width="284" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="meD-fU-fie"/>
@@ -120,7 +119,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Subtitle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IuM-7h-7di">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Details" placeholder="Subtitle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IuM-7h-7di">
                                                         <rect key="frame" x="0.0" y="50" width="284" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="FEk-tA-u0I"/>
@@ -180,7 +179,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFG-Xp-ikZ" userLabel="Card View">
                                         <rect key="frame" x="0.0" y="241" width="300" height="421"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Notes" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Xe-cq-1mL">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="Note" placeholder="Notes" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Xe-cq-1mL">
                                                 <rect key="frame" x="10" y="15" width="280" height="391"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
@@ -228,10 +227,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="detailTF" destination="Iec-ZY-ky1" id="f9k-Wn-O91"/>
+                        <outlet property="detailTF" destination="IuM-7h-7di" id="7QT-iY-XAq"/>
                         <outlet property="fieldsCardView" destination="ptZ-tR-dZg" id="aiJ-Bw-FYA"/>
+                        <outlet property="fromTime" destination="ht1-dC-kS7" id="ttN-Lf-irQ"/>
                         <outlet property="notesCardView" destination="HFG-Xp-ikZ" id="V8X-Hk-avr"/>
-                        <outlet property="titleTF" destination="IuM-7h-7di" id="mFQ-Pi-IUq"/>
+                        <outlet property="titleTF" destination="Iec-ZY-ky1" id="Bf0-fa-Rrp"/>
+                        <outlet property="toTime" destination="Upk-nL-QBW" id="Y3s-xK-DHp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIz-gO-IDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
